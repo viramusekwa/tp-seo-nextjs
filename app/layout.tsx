@@ -12,20 +12,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://isigform.vercel.app"),
+
   title: "Formation informatique à Goma | Académie Numérique",
-  description: "Découvrez des formations pratiques en développement web, réseaux informatiques et intelligence artificielle à Goma.",
-  keywords: [
-    "formation informatique à Goma",
-    "développement web",
-    "réseaux informatiques",
-    "intelligence artificielle",
-    "formation numérique",
-  ],
+
+  description:
+    "Découvrez nos formations en développement web, réseaux informatiques et intelligence artificielle à Goma.",
+
+  alternates: {
+    canonical: "/",
+  },
+
   robots: {
     index: true,
     follow: true,
   },
+
   openGraph: {
     title: "Académie Numérique | Formation informatique à Goma",
     description:
@@ -33,6 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_CD",
     siteName: "Académie Numérique",
+    url: "/",
   },
 };
 
